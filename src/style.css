@@ -1,0 +1,312 @@
+/* RESET */
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: inter, monospace;
+}
+
+html {
+    font-size: 10px;
+    background-color: #cfb590;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   
+    border-radius: 10px;
+    border: 2px solid #cfb590;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    padding: 5vh 5vw;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 250px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 20px 5vw 20px 7vw;
+}
+
+main .container textarea {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    box-sizing: border-box;
+
+    overflow: auto;
+    outline:none;
+    resize:none;
+
+    background-color: #cfb590;
+    color: #0A3871;
+    font-size: 2.5rem;
+}
+
+main .container textarea::placeholder {
+    color: #0A3871;
+}
+
+main .container textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+main .container textarea::-webkit-scrollbar-track {
+    background: #FFF;
+    border-radius: 50px;
+}
+
+main .container textarea::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+}
+
+main .container .botoes div {
+    display: flex;
+}
+
+main .container .botoes div p {
+    align-self: center;
+    margin: 0 0 0 7px;
+    
+}
+
+main .container .botoes ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .botoes ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    width: 45%;
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+    border-radius: 1.5rem;
+
+    transition: 200ms transform, 200ms opacity;
+}
+
+main .container .botoes ul li:first-child {
+    background-color: #49281f;
+    color: #FFF;
+}
+
+main .container .botoes ul li:last-child {
+    background-color: #564334;
+    color: #ffffff;
+
+}
+
+.display-texto {
+    width: 40%;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.display-texto .container-padrao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 12px rgba(39, 39, 39, 0.2);
+}
+
+.display-texto .container-padrao .img-procurando {
+    width: 80%;
+}
+
+.display-texto h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 1.2rem 0;
+}
+
+.display-texto .container-padrao p {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 5%;
+}
+
+.display-texto .container-mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.display-texto .container-mensagem .mensagemcpp {
+    width: 100%;
+    height: 60vh;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+
+    outline:none;
+    resize:none;
+
+    font-size: 2rem;
+    color: #495057;
+}
+
+.display-texto .container-mensagem .mensagemcpp::-webkit-scrollbar{
+    width: 10px;
+}
+
+.display-texto .container-mensagem .mensagemcpp::-webkit-scrollbar-track{
+    background: #FFF;
+    border-radius: 50px;
+}
+
+.display-texto .container-mensagem .mensagemcpp::-webkit-scrollbar-thumb{
+    background-color: #0A3871;
+    border-radius: 20px;
+    border: 3px solid #FFF;
+}
+
+.display-texto .container-mensagem .botao-copiar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #758918;
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    width: 100%;
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+
+    border-radius: 1.5rem;
+
+    transition: 200ms transform;
+}
+
+#esconder {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+    main .container {
+        padding-left: 5vw;
+    }
+    main .container textarea {
+        margin-bottom: 20vh;
+    }
+    .display-texto {
+        width: 100%;
+        max-width: 100%;
+    }
+    .display-texto .container-padrao {
+        height: 100px;
+    }
+    .display-texto .container-padrao .img-procurando {
+        display: none;
+    }
+    .display-texto .container-padrao h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main .container .botoes ul {
+        flex-direction: column;
+    }
+    main .container .botoes ul li {
+        width: 100%;
+    }
+    .display-texto .container-padrao {
+        height: auto;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .display-texto .container-padrao h2 {
+        padding: 10% 0 0;
+    }
+    .display-texto .container-padrao p {
+        padding: 0 0 10%;
+    }
+}
